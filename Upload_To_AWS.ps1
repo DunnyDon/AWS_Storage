@@ -5,7 +5,7 @@ function upload ($directory) {
 			Write-S3Object -BucketName amazonamibucketstorage -KeyPrefix $File -Folder $file.fullname -Recurse
 		}
 		else{
-			#Write-S3Object -BucketName amazonamibucketstorage -File $file.fullname
+			Write-S3Object -BucketName amazonamibucketstorage -File $file.fullname
 		}
 	}
  }
